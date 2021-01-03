@@ -41,6 +41,12 @@ import boostConnectionIconURL from './boost/boost-illustration.svg';
 import boostConnectionSmallIconURL from './boost/boost-small.svg';
 import boostConnectionTipIconURL from './boost/boost-button-illustration.svg';
 
+import poweredUpIconURL from './powered-up/powered-up.png';
+import poweredUpInsetIconURL from './powered-up/powered-up-small.svg';
+import poweredUpConnectionIconURL from './powered-up/powered-up-illustration.svg';
+import poweredUpConnectionSmallIconURL from './powered-up/powered-up-small.svg';
+import poweredUpConnectionTipIconURL from './powered-up/powered-up-button-illustration.svg';
+
 import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
@@ -287,6 +293,36 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
+    },
+    {
+        name: 'LEGO Powered Up + Sensors',
+        extensionId: 'poweredUp',
+        iconURL: poweredUpIconURL,
+        insetIconURL: poweredUpInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Build with motors and sensors."
+                description="Description for the 'LEGO Powered Up' extension"
+                id="gui.extension.poweredUp.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        connectionIconURL: poweredUpConnectionIconURL,
+        connectionSmallIconURL: poweredUpConnectionSmallIconURL,
+        connectionTipIconURL: poweredUpConnectionTipIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their Powered Up."
+                id="gui.extension.poweredUp.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/boost'
     },
     {
         name: 'Go Direct Force & Acceleration',
