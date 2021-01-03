@@ -13,6 +13,8 @@ import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 import text2speechIconURL from './text2speech/text2speech.png';
 import text2speechInsetIconURL from './text2speech/text2speech-small.svg';
 
+import speechToTextIconURL from './scratch3_speech/scratch3_speech.png';
+
 import translateIconURL from './translate/translate.png';
 import translateInsetIconURL from './translate/translate-small.png';
 
@@ -130,6 +132,27 @@ export default [
                 defaultMessage="Make your projects talk."
                 description="Description for the Text to speech extension"
                 id="gui.extension.text2speech.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Speech to Text"
+                description="Name for the Speech to Text extension"
+                id="gui.extension.scratch3_speech.name"
+            />
+        ),
+        extensionId: 'speech',
+        collaborator: 'SlupekDev (based on ML for Kinds extension)',
+        iconURL: speechToTextIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="(Google Chrome browsers only)"
+                description="Description for the Speech to Text extension"
+                id="gui.extension.scratch3_speech.description"
             />
         ),
         featured: true,
