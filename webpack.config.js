@@ -19,8 +19,10 @@ const base = {
     devtool: 'cheap-module-source-map',
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
-        host: '0.0.0.0',
-        port: process.env.PORT || 8601
+        host: 'localhost',
+        port: process.env.PORT || 8601,
+        open: "Chrome",
+        openPage:'index.html'
     },
     output: {
         library: 'GUI',
