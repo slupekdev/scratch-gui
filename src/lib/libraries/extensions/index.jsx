@@ -54,6 +54,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import iftttWebhooksIconURL from './iftttWebhooks/iftttWebhooks.png';
+import iftttWebhooksInsetIconURL from './iftttWebhooks/iftttWebhooks-small.png';
+
 export default [
     {
         name: (
@@ -376,5 +379,23 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'IFTTT Webhooks',
+        extensionId: 'iftttWebhooks',
+        collaborator: 'SlupekDev',
+        iconURL: iftttWebhooksIconURL,
+        insetIconURL: iftttWebhooksInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='Using the IFTTT webhooks in Scratch3.'
+                description='Using the IFTTT webhooks in Scratch3.'
+                id='gui.extension.iftttWebhooks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
     }
 ];
