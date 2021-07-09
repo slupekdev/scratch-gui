@@ -407,3 +407,8 @@ extensions.unshift(legoble);
 import legoremote from './legoremote/index.jsx';
 extensions.unshift(legoremote);
 
+// Injected for extra extension poweredup
+import poweredup from './poweredup/index.jsx';
+extensions.unshift(poweredup);
+
+export default extensions;
