@@ -403,3 +403,7 @@ const extensions = [
 import legoble from './legoble/index.jsx';
 extensions.unshift(legoble);
 
+// Injected for extra extension legoremote
+import legoremote from './legoremote/index.jsx';
+extensions.unshift(legoremote);
+
