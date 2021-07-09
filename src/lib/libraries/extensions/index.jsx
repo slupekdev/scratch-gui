@@ -411,4 +411,8 @@ extensions.unshift(legoremote);
 import poweredup from './poweredup/index.jsx';
 extensions.unshift(poweredup);
 
+// Injected for extra extension legomario
+import legomario from './legomario/index.jsx';
+extensions.unshift(legomario);
+
 export default extensions;
