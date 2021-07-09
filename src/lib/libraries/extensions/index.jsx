@@ -56,8 +56,7 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import iftttWebhooksIconURL from './iftttWebhooks/iftttWebhooks.png';
 import iftttWebhooksInsetIconURL from './iftttWebhooks/iftttWebhooks-small.png';
-
-export default [
+const extensions = [
     {
         name: (
             <FormattedMessage
@@ -399,3 +398,8 @@ export default [
         bluetoothRequired: false
     }
 ];
+
+// Injected for extra extension legoble
+import legoble from './legoble/index.jsx';
+extensions.unshift(legoble);
+
